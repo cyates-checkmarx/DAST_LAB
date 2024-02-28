@@ -55,11 +55,12 @@ function authenticate(helper, paramsValues, credentials) {
     if (url.endsWith('/')) {
         url = url.slice(0, -1);
     }
-	var username = credentials.getParam(usernameParam);
+    var username = credentials.getParam(usernameParam);
     var password = credentials.getParam(passwordParam);
 	
-	var requestBody = paramsValues.get(userNameKey).toLowerCase() + "=" + encodeURIComponent(username);
+    var requestBody = paramsValues.get(userNameKey).toLowerCase() + "=" + encodeURIComponent(username);
     requestBody += "&" + paramsValues.get(passwordKey).toLowerCase() + "=" + encodeURIComponent(password);
+    += "&btnSubmit=Login";
     
     var request = {
         method: HttpRequestHeader.POST,

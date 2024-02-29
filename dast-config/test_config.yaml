@@ -3,7 +3,7 @@ env:
         - authentication:
             method: script
             parameters:
-                script: "/github/workspace/dast-config/testfire_auth.js"
+                script: "testfire_auth.js"
                 scriptEngine: "ECMAScript : Graal.js"
                 usernameKey: "uid"
                 passwordKey: "passw"
@@ -47,7 +47,7 @@ jobs:
         type: "authentication"
         engine: "ECMAScript : Graal.js"
         name: "testfire_auth"
-        file: "/github/workspace/dast-config/testfire_auth.js"
+        file: "testfire_auth.js"
         target: ""
         inline: ""
       name: "script"

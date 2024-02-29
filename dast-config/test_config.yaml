@@ -15,7 +15,7 @@ env:
                 pollFrequency: 60
                 pollPostData: ""
                 pollUnits: requests
-                pollUrl: http://testfire.net/bank/transfer.jsp
+                pollUrl: http://testfire.net
           excludePaths:
             - http://testfire.net/.*jsp
             - http://testfire.net/.*js

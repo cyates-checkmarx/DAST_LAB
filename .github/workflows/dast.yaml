@@ -24,7 +24,7 @@ jobs:
           CX_APIKEY: ${{ secrets.AST_API_KEY }}
         with:
           command: web
-          config: dast-config/test_config.yaml
+          config: ./dast-config/test_config.yaml
           environment_id: e383f103-4c8e-46a0-b20d-8cd02ed50d92
           fail_on: "HIGH"
           log_level: info
